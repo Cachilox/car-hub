@@ -60,6 +60,11 @@ export interface ShowMoreProps {
   setLimit: (newLimit: number) => void;
 }
 
+export interface ShowLessProps {
+  isNext: boolean;
+  setLimit: (newLimit: number) => void;
+}
+
 export interface SearchBarProps {
   setManufacturer: (value: string) => void;
   setModel: (value: string) => void;

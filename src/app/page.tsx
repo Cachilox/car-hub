@@ -5,6 +5,7 @@ import { fuels, yearsOfProduction } from "@/constants";
 import { getCars } from "@/services/getCars";
 import React from "react";
 import Image from "next/image";
+import ShowLess from "@/components/ShowLess";
 
 export default function Home() {
   const [allCars, setAllCars] = useState([]);
@@ -80,11 +81,19 @@ export default function Home() {
               </div>
             )}
 
-            <ShowMore
-              pageNumber={limit / 10}
-              isNext={limit > allCars.length}
-              setLimit={setLimit}
-            />
+            {limit > allCars.length ? (
+              <ShowLess isNext={limit > allCars.length} setLimit={setLimit} />
+            ) : (
+              <>
+                {!Isloading && (
+                  <ShowMore
+                    pageNumber={limit / 10}
+                    isNext={limit > allCars.length}
+                    setLimit={setLimit}
+                  />
+                )}
+              </>
+            )}
           </section>
         ) : (
           <div className="home__error-container">
