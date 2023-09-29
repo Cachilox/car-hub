@@ -13,8 +13,8 @@ const CarCard = ({ car }: { car: CarProps }) => {
 
   return (
     <div className="car-card group">
-      <div className="car-card-content">
-        <h2 className="car-card-content-title">
+      <div className="car-card__content">
+        <h2 className="car-card__content-title">
           {make} {model}
         </h2>
       </div>

@@ -75,7 +75,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                           alt="car model"
                           fill
                           priority
-                          className="object-cover"
+                          className="object-contain md:object-cover"
                         />
                       </div>
                       <div className="flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg">
