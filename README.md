@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CarHub
 
-## Getting Started
+Carhub is a modern app that takes advantage of the latest and greatest that Next 13 has to offer, taking advantage of features like server-side rendering and app router.
 
-First, run the development server:
+## Features
+
+- Full Responsive: Fully responsive design adaptable for desktop, tablet or mobile phone.
+- Optimized Performance: Thanks to Next.js, Carhub offers exceptional performance and smooth navigation.
+- Car Filtering: Easily find the vehicle you want using the filtering options.
+- Search by year and fuel type: Explore our wide selection of cars using search filters by year and fuel type.
+- Detailed information: Get complete and detailed information about each vehicle, including technical specifications, images and features.
+- Paginación: Explore our wide selection of cars efficiently using the show more feature.
+
+
+## Installation
+
+Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/Cachilox/car-hub.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Install:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+    cd car_hub
+    npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
 
-## Learn More
+In the root folder create `.env` archive.
 
-To learn more about Next.js, take a look at the following resources:
+**_Environment Variables_**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- NEXT_PUBLIC_API_KEY= [Cars by API-Ninjas](https://rapidapi.com/apininjas/api/cars-by-api-ninjas)
+- NEXT_PUBLIC_IMAGE_API_KEY= [Images api](https://www.imagin.studio/car-image-api)
