@@ -13,12 +13,11 @@ export default function Home() {
 
   const [manufacturer, setManufacturer] = useState("");
   const [model, setModel] = useState("");
+
   const [fuel, setFuel] = useState("");
   const [year, setYear] = useState(2022);
 
   const [limit, setLimit] = useState(10);
-  console.log(allCars.length);
-  console.log(allCars.length < 10);
 
   const getAllCars = useCallback(async () => {
     setIsLoading(true);
@@ -84,7 +83,7 @@ export default function Home() {
 
             {limit > allCars.length ? (
               <>
-                {!(allCars.length < 10) && (
+                {!(allCars.length <= 10) && (
                   <ShowLess
                     isNext={limit > allCars.length}
                     setLimit={setLimit}
